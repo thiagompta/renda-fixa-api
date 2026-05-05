@@ -34,7 +34,7 @@ Construída com FastAPI, SQLAlchemy e integração em tempo real com a API do Ba
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/renda-fixa-api
+git clone https://github.com/thiagompta/renda-fixa-api
 cd renda-fixa-api
 
 python -m venv .venv
