@@ -34,7 +34,7 @@ def _fetch_last_value(serie_id: int) -> float:
         logger.error("Resposta inesperada da BCB série %d: %s", serie_id, exc)
         raise ExternalAPIError("Formato de resposta inesperado da BCB") from exc
 
-_FALLBACK_RATES = {"cdi": 10.65, "selic": 10.75, "ipca": 4.83}
+_FALLBACK_RATES = {"cdi": 14.40, "selic": 14.50, "ipca": 4.14}
 @lru_cache(maxsize=1)
 def _get_rates_cached(cache_key: str) -> dict[str, float]:
     """
